@@ -4,131 +4,250 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
   <body class="bg-[#000618]">
-    <header>
-      <nav
-        class="max-w-[1150px] px-[10px] my-[10px] md:my-[48px] mx-auto flex justify-between items-center"
-      >
-        <a
-          href="#"
-          class="text-white flex items-center gap-2 text-[24px] font-[700]"
-          ><img src="./img/logos/Group 867.svg" /> <span>CryptoDo</span></a
+    <div>
+      <!-- main header section starts here  -->
+      <header>
+        <nav
+          class="max-w-[1150px] px-[10px] my-[10px] md:my-[48px] mx-auto flex justify-between items-center"
         >
-        <!-- menu for big screen  -->
-        <div
-          class="hidden md:flex bg-[#000618] items-center gap-[28px] relative"
-        >
-          <ul class="flex gap-[40px]">
-            <li
-              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
-            >
-              <a href="#">Home</a>
-            </li>
-            <li
-              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
-            >
-              <a href="#">About</a>
-            </li>
-            <li
-              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
-            >
-              <a href="#">Contact</a>
-            </li>
-            <li
-              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
-            >
-              <a href="#">Dashboard</a>
-            </li>
-          </ul>
-          <div class="flex gap-[28px]">
-            <ul class="text-white flex border-2 border-[#0194FE] rounded-full">
-              <li class="px-[25px] py-[14px] cursor-pointer">
-                <a href="#">Connected</a>
+          <a
+            href="#"
+            class="text-white flex items-center gap-2 text-[24px] font-[700]"
+            ><img src="./img/logos/Group 867.svg" /> <span>CryptoDo</span></a
+          >
+          <!-- menu for big screen  -->
+          <div
+            class="hidden md:flex bg-[#000618] items-center gap-[28px] relative"
+          >
+            <ul class="flex gap-[40px]">
+              <li
+                class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+              >
+                <a href="#">Home</a>
               </li>
               <li
-                class="px-[30px] py-[14px] cursor-pointer bg-gradient-to-r from-[#00C3FD] to-[#0284E2] rounded-full shadow-lg shadow-[#014678]"
+                class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
               >
-                <a href="#">Connect wallet</a>
+                <a href="#">About</a>
+              </li>
+              <li
+                class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+              >
+                <a href="#">Contact</a>
+              </li>
+              <li
+                class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+              >
+                <a href="#">Dashboard</a>
               </li>
             </ul>
-            <select class="bg-[#000618] text-white cursor-pointer">
-              <option>EN</option>
-              <option>BN</option>
-              <option>IN</option>
-            </select>
+            <div class="flex gap-[28px]">
+              <ul
+                class="text-white flex border-2 border-[#0194FE] rounded-full"
+              >
+                <li class="px-[25px] py-[14px] cursor-pointer">
+                  <a href="#">Connected</a>
+                </li>
+                <li
+                  class="px-[30px] py-[14px] cursor-pointer bg-gradient-to-r from-[#00C3FD] to-[#0284E2] rounded-full shadow-lg shadow-[#014678]"
+                >
+                  <a href="#">Connect wallet</a>
+                </li>
+              </ul>
+              <select class="bg-[#000618] text-white cursor-pointer">
+                <option>EN</option>
+                <option>BN</option>
+                <option>IN</option>
+              </select>
+            </div>
           </div>
+
+          <!-- menu for mobile  -->
+          <div
+            id="mobile-menu"
+            class="flex hidden md:hidden flex-col py-5 rounded-[5px] bg-[#04226B] items-center gap-[20px] absolute right-[10px] top-[55px]"
+          >
+            <ul class="flex flex-col gap-[20px]">
+              <li
+                id="menu-item"
+                class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                id="menu-item"
+                class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+              >
+                <a href="#">About</a>
+              </li>
+              <li
+                id="menu-item"
+                class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+              >
+                <a href="#">Contact</a>
+              </li>
+              <li
+                id="menu-item"
+                class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+              >
+                <a href="#">Dashboard</a>
+              </li>
+            </ul>
+            <div class="flex flex-col gap-[20px] px-2">
+              <ul
+                class="text-white flex border-2 border-[#0194FE] rounded-full"
+              >
+                <li class="px-[20px] py-[5px] cursor-pointer">
+                  <a href="#">Connected</a>
+                </li>
+                <li
+                  class="px-[20px] py-[5px] cursor-pointer bg-gradient-to-r from-[#00C3FD] to-[#0284E2] rounded-full shadow-lg shadow-[#014678]"
+                >
+                  <a href="#">Connect wallet</a>
+                </li>
+              </ul>
+              <select class="bg-[#000618] w-[50px] text-white cursor-pointer">
+                <option>EN</option>
+                <option>BN</option>
+                <option>IN</option>
+              </select>
+            </div>
+          </div>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            viewBox="0 0 24 24"
+            id="menu-toggle"
+            class="block md:hidden"
+          >
+            <path
+              fill="none"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.5"
+              d="M3.75 9h16.5m-16.5 6.75h16.5"
+            />
+          </svg>
+        </nav>
+      </header>
+
+      <!-- hero section starts here  -->
+      <section
+        class="max-w-[1150px] px-[10px] mx-auto flex flex-col lg:flex-row justify-between items-center"
+      >
+        <div class="">
+          <h1 class="text-white text-[68px] lg:text-[144px]">CryptoDo</h1>
+          <p class="text-white mt-4 text-[20px] md:text-[25px] leading-[55px]">
+            <span class="font-[700] border-b-2 border-[#0194FE]">The best</span>
+            crypto smart-contract to make better future.
+          </p>
+          <p class="text-white mt-3 text-[20px] md:text-[25px] leading-[55px]">
+            Start building your smart contract with
+            <span class="font-[700] border-b-2 border-[#0194FE]"
+              >CryptoDo.</span
+            >
+          </p>
+          <button
+            class="mt-[20px] px-[30px] py-[10px] text-white bg-gradient-to-r from-[#00C3FD] to-[#0194FE] rounded-full"
+          >
+            Create a contract
+          </button>
         </div>
 
-        <!-- menu for mobile  -->
-        <div
-          id="mobile-menu"
-          class="flex hidden md:hidden flex-col py-5 rounded-[5px] bg-[#04226B] items-center gap-[20px] absolute right-[10px] top-[55px]"
-        >
-          <ul class="flex flex-col gap-[20px]">
-            <li
-              id="menu-item"
-              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
-            >
-              <a href="#">Home</a>
-            </li>
-            <li
-              id="menu-item"
-              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
-            >
-              <a href="#">About</a>
-            </li>
-            <li
-              id="menu-item"
-              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
-            >
-              <a href="#">Contact</a>
-            </li>
-            <li
-              id="menu-item"
-              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
-            >
-              <a href="#">Dashboard</a>
-            </li>
-          </ul>
-          <div class="flex flex-col gap-[20px] px-2">
-            <ul class="text-white flex border-2 border-[#0194FE] rounded-full">
-              <li class="px-[20px] py-[5px] cursor-pointer">
-                <a href="#">Connected</a>
-              </li>
-              <li
-                class="px-[20px] py-[5px] cursor-pointer bg-gradient-to-r from-[#00C3FD] to-[#0284E2] rounded-full shadow-lg shadow-[#014678]"
-              >
-                <a href="#">Connect wallet</a>
-              </li>
-            </ul>
-            <select class="bg-[#000618] w-[50px] text-white cursor-pointer">
-              <option>EN</option>
-              <option>BN</option>
-              <option>IN</option>
-            </select>
+        <!-- mobile with objects  -->
+        <div class="mt-[20px]">
+          <div class="relative">
+            <img
+              src="./img/hero-img/phone-objects/phone.png"
+              class="w-auto h-auto"
+            />
+
+            <!-- first object here  -->
+            <div class="absolute w-[200px] h-[120px] left-[55px] top-[80px]">
+              <div class="relative">
+                <img
+                  class="absolute -top-[43px] -left-[50px] z-50"
+                  src="./img/hero-img/phone-objects/etharium.svg"
+                />
+                <img
+                  class="absolute top-0 -left-0"
+                  src="./img/hero-img/phone-objects/etharium-frame.svg"
+                />
+
+                <img
+                  class="absolute top-[18px] left-[10px]"
+                  src="./img/hero-img/phone-objects/etharium-bg.svg"
+                />
+              </div>
+            </div>
+
+            <!-- second object here  -->
+            <div class="absolute w-[150px] h-[120px] left-[200px] top-[130px]">
+              <div class="relative">
+                <img
+                  class="absolute -top-[50px] -left-[20px] z-50"
+                  src="./img/hero-img/phone-objects/solidity.png"
+                />
+                <img
+                  class="absolute top-0 -left-0"
+                  src="./img/hero-img/phone-objects/solidity-frame.svg"
+                />
+
+                <img
+                  class="absolute top-[20px] left-[10px]"
+                  src="./img/hero-img/phone-objects/solidity-bg.svg"
+                />
+              </div>
+            </div>
+
+            <!-- third object here  -->
+            <div class="absolute w-[220px] h-[120px] left-[0px] top-[240px]">
+              <div class="relative">
+                <img
+                  class="absolute -top-[43px] -left-[60px] z-50"
+                  src="./img/hero-img/phone-objects/solona.svg"
+                />
+                <img
+                  class="absolute top-0 -left-0"
+                  src="./img/hero-img/phone-objects/solona-frame.svg"
+                />
+
+                <img
+                  class="absolute top-[20px] left-[8px]"
+                  src="./img/hero-img/phone-objects/solona-bg.svg"
+                />
+              </div>
+            </div>
+
+            <!-- forth object here  -->
+            <div class="absolute w-[150px] h-[120px] left-[150px] top-[300px]">
+              <div class="relative">
+                <img
+                  class="absolute -top-[55px] -left-[25px] z-50"
+                  src="./img/hero-img/phone-objects/vercel.png"
+                />
+                <img
+                  class="absolute top-0 -left-0"
+                  src="./img/hero-img/phone-objects/vercel-frame.svg"
+                />
+
+                <img
+                  class="absolute top-[20px] left-[8px]"
+                  src="./img/hero-img/phone-objects/vercel-bg.svg"
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="2em"
-          height="2em"
-          viewBox="0 0 24 24"
-          id="menu-toggle"
-          class="block md:hidden"
-        >
-          <path
-            fill="none"
-            stroke="white"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="1.5"
-            d="M3.75 9h16.5m-16.5 6.75h16.5"
-          />
-        </svg>
-      </nav>
-    </header>
+      </section>
+      <section class="h-[50vh]"></section>
+    </div>
     <script src="./script/main.js"></script>
   </body>
 </html>
