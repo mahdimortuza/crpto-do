@@ -1,11 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>crpto-do</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   </head>
-  <body>
-    <h1>hello world!</h1>
+  <body class="bg-[#000618]">
+    <header>
+      <nav
+        class="max-w-[1150px] px-[10px] my-[10px] md:my-[48px] mx-auto flex justify-between items-center"
+      >
+        <a
+          href="#"
+          class="text-white flex items-center gap-2 text-[24px] font-[700]"
+          ><img src="./img/logos/Group 867.svg" /> <span>CryptoDo</span></a
+        >
+        <!-- menu for big screen  -->
+        <div
+          class="hidden md:flex bg-[#000618] items-center gap-[28px] relative"
+        >
+          <ul class="flex gap-[40px]">
+            <li
+              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+            >
+              <a href="#">About</a>
+            </li>
+            <li
+              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+            >
+              <a href="#">Contact</a>
+            </li>
+            <li
+              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+            >
+              <a href="#">Dashboard</a>
+            </li>
+          </ul>
+          <div class="flex gap-[28px]">
+            <ul class="text-white flex border-2 border-[#0194FE] rounded-full">
+              <li class="px-[25px] py-[14px] cursor-pointer">
+                <a href="#">Connected</a>
+              </li>
+              <li
+                class="px-[30px] py-[14px] cursor-pointer bg-gradient-to-r from-[#00C3FD] to-[#0284E2] rounded-full shadow-lg shadow-[#014678]"
+              >
+                <a href="#">Connect wallet</a>
+              </li>
+            </ul>
+            <select class="bg-[#000618] text-white cursor-pointer">
+              <option>EN</option>
+              <option>BN</option>
+              <option>IN</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- menu for mobile  -->
+        <div
+          id="mobile-menu"
+          class="flex hidden md:hidden flex-col py-5 rounded-[5px] bg-[#04226B] items-center gap-[20px] absolute right-[10px] top-[55px]"
+        >
+          <ul class="flex flex-col gap-[20px]">
+            <li
+              id="menu-item"
+              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+            >
+              <a href="#">Home</a>
+            </li>
+            <li
+              id="menu-item"
+              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+            >
+              <a href="#">About</a>
+            </li>
+            <li
+              id="menu-item"
+              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+            >
+              <a href="#">Contact</a>
+            </li>
+            <li
+              id="menu-item"
+              class="text-[#FFFFFF82] cursor-pointer hover:text-white border-[2px] border-transparent hover:border-b-[#0194FE] py-[6px]"
+            >
+              <a href="#">Dashboard</a>
+            </li>
+          </ul>
+          <div class="flex flex-col gap-[20px] px-2">
+            <ul class="text-white flex border-2 border-[#0194FE] rounded-full">
+              <li class="px-[20px] py-[5px] cursor-pointer">
+                <a href="#">Connected</a>
+              </li>
+              <li
+                class="px-[20px] py-[5px] cursor-pointer bg-gradient-to-r from-[#00C3FD] to-[#0284E2] rounded-full shadow-lg shadow-[#014678]"
+              >
+                <a href="#">Connect wallet</a>
+              </li>
+            </ul>
+            <select class="bg-[#000618] w-[50px] text-white cursor-pointer">
+              <option>EN</option>
+              <option>BN</option>
+              <option>IN</option>
+            </select>
+          </div>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="2em"
+          height="2em"
+          viewBox="0 0 24 24"
+          id="menu-toggle"
+          class="block md:hidden"
+        >
+          <path
+            fill="none"
+            stroke="white"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="1.5"
+            d="M3.75 9h16.5m-16.5 6.75h16.5"
+          />
+        </svg>
+      </nav>
+    </header>
+    <script src="./script/main.js"></script>
   </body>
 </html>
